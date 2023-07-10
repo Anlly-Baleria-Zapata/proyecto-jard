@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registro de Hoja de Vida del Equipo</title>
+  <link rel="stylesheet" href="styles/styles4.css">
+</head>
+<body>
+
+  <div>
+    <ul class="navbar" id="myNavbar">
+      <nav class="barra">
+        <div class="logo">
+          <img src="logo/jard.png" alt="logo de pagina">
+        </div>
+        <li><a href="index5.html">Inicio</a></li>
+        <li><a href="index4.html">RLHV-E</a></li>
+        <li><a href="index6.html">Computadores</a></li>
+        <li><a href="index7.html">Ubicación - depreciacion</a></li>
+        <li><a href="index8.html">Informe</a></li>
+        <li><a class="boton-cerrar-sesion" onclick="confirmarCerrarSesion()">Cerrar sesión</a></li>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+      </nav>
+    </ul>
+  </div>
+
+  <h1>Registro de Hoja de Vida del Equipo</h1>
+  <form id="registroForm">
+    <label for="equipoId">ID del Equipo:</label>
+    <input type="text" id="equipoId" required>
+
+    <label for="hojaVidaId">ID de la Hoja de Vida del Equipo:</label>
+    <input type="text" id="hojaVidaId" required>
+
+    <label for="nombreSo">Nombre del SO:</label>
+    <input type="text" id="nombreSo" required>
+
+    <label for="nombreSistema">Nombre del Sistema:</label>
+    <input type="text" id="nombreSistema" required>
+
+    <label for="modeloSistema">Modelo del Sistema:</label>
+    <input type="text" id="modeloSistema" required>
+
+    <label for="precauciones">Precauciones de Utilización:</label>
+    <textarea id="precauciones" required></textarea>
+
+    <label for="responsables">Personas Responsables:</label>
+    <input type="text" id="responsables" required>
+
+    <label for="observaciones">Observaciones Generales:</label>
+    <textarea id="observaciones" required></textarea>
+
+    <label for="mantenimiento">Mantenimiento Asignado:</label>
+    <input type="text" id="mantenimiento" required>
+
+    <label for="reparacion">Reparación Asignada:</label>
+    <input type="text" id="reparacion" required>
+    
+    <div id="advertencia" style="display: none;" class="advertencia">
+      Los datos se han llenado y guardado correctamente.
+    </div>
+    <button onclick="mostrarAdvertencia()" type="submit">Registrar</button>
+  </form>
+
+  <script src="script/script2.js"></script>
+
+  <div class="botones-container">
+    <button class="boton-volver"><a href="index5.html">Volver</a></button>
+    <button class="boton-seguir"><a href="index6.html">Seguir</a></button>
+  </div>
+  
+</body>
+</html>
